@@ -1,4 +1,4 @@
-.main-wrapper{
+.main-wrapper {
     background-color: hsl(48deg 71% 99%);
 }
 
@@ -10,12 +10,9 @@
     font-family: 'Merriweather', serif;
 }
 
-.navbar-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
+    .nav-item {
+        padding: 0px 20px;
+    }
 
 // .nav-link {
 //     margin-left: 45px;

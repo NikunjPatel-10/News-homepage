@@ -1,18 +1,16 @@
-
-
 .left-section {
     padding: 0px 10px
 }
 
 .image-size {
-    /* height: 400px; */
-    width: 1100px;
+    height: 350px;
+    overflow: hidden;
 }
 
 .image-size img {
     width: 100%;
     height: auto;
-    overflow: hidden;
+
 }
 
 
@@ -25,15 +23,15 @@
 
 .bright-text {
     width: 50%;
-    font-size: 65px;
+    font-size: 45px;
     font-weight: bold;
-    padding: 10px 0px;
+    // padding: 10px 0px;
     /* text-align: center; */
 }
 
 .description-text {
     /* width: 50%; */
-    font-size: 25px;
+    font-size: 20px;
     color: hsl(266deg 3% 42%);
     padding: 10px 0px;
     /* text-align: center; */
@@ -51,49 +49,45 @@
 
 
 .aside-section {
-   
+
     background-color: hsl(240, 100%, 5%);
-    padding:15px 15px;
+    padding: 30px;
 }
 
-.new-text{
-    font-size:2rem;
-    color:hsl(35, 77%, 62%);
+.new-text {
+    font-size: 3rem;
+    color: hsl(35, 77%, 62%);
 }
+
+
 
 
 
 .feature {
-    margin-top:5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 100%;
-    /* justify-content: space-around; */
-       /* padding: 0px 10px */
+    padding: 20px 0px;
+    border-bottom: 2px solid hsl(238deg 23% 21%);
 }
-h3{
+
+h3 {
     color: hsl(260deg 10% 88%);
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .feature-subtext {
-    margin-bottom: 40px; 
-    color:hsl(36, 100%, 99%);
-}
-.feature-main {
- border-bottom: 1px solid hsl(238deg 16% 29%);
+    margin-bottom: 20px;
+    color: hsl(36, 100%, 99%);
 }
 
+
+
 .bottom-part {
-  
-    margin-top: 20px;
-  
+    margin-top: 10px;
+
 }
 
 .bottom-section {
     display: flex;
-    padding: 10px 20px;
+
 }
 
 .bottom-image {
@@ -118,14 +112,14 @@ h3{
 .number {
     font-size: 30px;
     color: hsl(260deg 6% 79%);
-    margin-bottom: 20px;
+
 }
 
-.bottom-subheading{
-    font-size: 20px ;
+.bottom-subheading {
+    font-size: 20px;
     font-weight: 900;
     color: hsl(244deg 63% 5%);
-    margin-bottom: 20px;
+
 }
 
 .bottom-description {
