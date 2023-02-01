@@ -1,0 +1,24 @@
+.main-wrapper{
+    background-color: hsl(48deg 71% 99%);
+}
+
+
+.header-text {
+    font-size: 50px;
+    font-weight: 900;
+    color: hsl(237deg 100% 5%);
+    font-family: 'Merriweather', serif;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+// .nav-link {
+//     margin-left: 45px;
+//     list-style: none;
+//     color: hsl(260deg 1% 48%)
+// }
