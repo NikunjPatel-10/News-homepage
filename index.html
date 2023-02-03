@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- displays site properly based on user's device -->
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/style.css" />
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
 
@@ -18,112 +18,154 @@
 </head>
 
 <body>
-  <div class="main-wrapper h-100 w-100 container my-5">
+  <div class="h-100 w-100 overflow-auto">
+    <div class="main-wrapper  container my-5 ">
       <!-- header section start -->
-      <header class="d-flex justify-content-between">
+      <header class="d-flex justify-content-between align-items-center">
         <div class="header-text">W.</div>
-        <ul class="nav d-flex justify-content-center align-items-center">
-          <li class="nav-item">
-            <a class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" >News</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link">Popular</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link ">Trending</a>
-          </li>
-          <li class="nav-item">
-            <a class=" nav-link">Categories</a>
-          </li>
-        </ul>
+
+        <nav class="nav-desktop">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Popular</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ">Trending</a>
+            </li>
+            <li class="nav-item">
+              <a class=" nav-link">Categories</a>
+            </li>
+          </ul>
+        </nav>
+        <label for="toggle-bar" class="image-label"><img src="./assets/images/icon-menu.svg"
+            alt="icon-menu.svg"></label>
+        <input type="checkbox" id="toggle-bar">
+        <nav class="nav-mobile">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Popular</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ">Trending</a>
+            </li>
+            <li class="nav-item">
+              <a class=" nav-link">Categories</a>
+            </li>
+          </ul>
+        </nav>
       </header>
       <!-- header section end -->
       <!-- main-section start -->
-      <section class="Section">
-        <div class="main-section row">
-          <div class="left-section col-8">
-            <div class="image-size">
+      <section class="overflow-hidden">
+        <div class=" row">
+          <div class="left-section col-12 col-sm-8">
+            <div class="image-size ">
               <img src="./assets/images/image-web-3-desktop.jpg" />
             </div>
-            <div class="content-section">
-              <div class="bright-text">The Bright<br> Future of <br>Web 3.0?</div>
-              <div class="description-text">
-                <div>
-                  We dive into the next evolution of the web that<br> claims to put
-                  the power of the platforms back<br> into the hands of the people.
-                  But is it really <br>fulfilling its promise?
-                </div>
-                <button class="btn-color">Read more</button>
+            <div class="content-section row">
+              <div class="bright-text col-12 col-sm-6 ">
+                <h1>The Bright Future of Web 3.0?</h1>
+              </div>
+              <div class="description-text col-12 col-sm-6 ">
+                <p>
+                  We dive into the next evolution of the web that claims to put
+                  the power of the platforms back into the hands of the people.
+                  But is it really fulfilling its promise?</p>
+                <div><button class="btn-color">READ MORE</button></div>
               </div>
             </div>
           </div>
-          <aside class="aside-section col-4">
-            <div class="new-text">New</div>
-            <div class="feature">
-              <div class="feature-main">
+          <aside class="aside-section d-flex flex-column col-12 col-sm-4">
+            <div>
+              <h2 class="new-text">New</h2>
+            </div>
+            <div class=" flex-grow-1 d-flex flex-column feature-wrapper">
+              <div class="feature">
                 <h3 class="feature-text">Hydrogen VS Electric Cars</h3>
-                <div class="feature-subtext"> Will hydrogen-fueled cars ever catch
-                  up to EVs?</div>
+                <div>
+                  <p class="feature-subtext">Will hydrogen-fueled cars ever catch
+                    up to EVs?</p>
+                </div>
               </div>
-              <div class="feature-main">
+
+              <div class="feature">
                 <h3 class="feature-text">The Downsides of AI Artistry</h3>
-                <div class="feature-subtext"> What are the possible adverse
-                  effects of on-demand AI image generation?</div>
+                <div>
+                  <p class="feature-subtext">What are the possible adverse
+                    effects of on-demand AI image generation?</p>
+                </div>
               </div>
-              <div class="">
+
+              <div class="feature">
                 <h3 class="feature-text">Is VC Funding Drying Up?</h3>
-                <div class="feature-subtext"> Private funding by VC firms is down 50%
-                  YOY. We take a look at what that means.</div>
+                <div>
+                  <p class="feature-subtext">Private funding by VC firms is down 50%
+                    YOY. We take a look at what that means.</p>
+                </div>
               </div>
             </div>
           </aside>
         </div>
         <div class="bottom-part row">
-          <div class="bottom-section col-4">
+          <div class="bottom-section col-12 col-sm-4">
             <div class="bottom-image">
               <img src="./assets/images/image-retro-pcs.jpg" />
             </div>
             <div class="bottom-text">
-              <div class="number">01</div>
-              <div class="bottom-subheading">Reviving Retro PCs</div>
-              <div class="bottom-description">What happens when old PCs are given modern upgrades?</div>
+              <div class="number"><span >01</span></div>
+              <div class="w-100">
+                <h5 class="bottom-subheading">Reviving Retro PCs</h5>
+              </div>
+              <div>
+                <p class="bottom-description">What happens when old PCs are given modern upgrades?</p>
+              </div>
             </div>
           </div>
-          <div class="bottom-section col-4">
+          <div class="bottom-section col-12 col-sm-4">
             <div class="bottom-image">
               <img src="./assets/images/image-top-laptops.jpg" />
             </div>
             <div class="bottom-text ">
-              <div class="number">02</div>
-              <div class="bottom-subheading">Top 10 Laptops of 2022</div>
-              <div class="bottom-description">Our best picks for various needs and budgets.</div>
+              <div class="number"><span >02</span></div>
+              <div class="w-100">
+                <h5 class="bottom-subheading">Top 10 Laptops of 2022</h5>
+              </div>
+              <div>
+                <p class="bottom-description">Our best picks for various needs and budgets.</p>
+              </div>
             </div>
           </div>
-          <div class="bottom-section col-4">
+          <div class="bottom-section col-12  col-sm-4 px-sm-0">
             <div class="bottom-image">
               <img src="./assets/images/image-gaming-growth.jpg" />
             </div>
             <div class="bottom-text">
-              <div class="number">03</div>
-              <div class="bottom-subheading">The Growth of Gaming</div>
-              <div class="bottom-description">How the pandemic has sparked fresh opportunities.</div>
+              <div class="number "><span >03</span></div>
+              <div class="w-100">
+                <h5 class="bottom-subheading ">The Growth of Gaming</h5>
+              </div>
+              <div>
+                <p class="bottom-description">How the pandemic has sparked fresh opportunities.</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- main-section end -->
-
-      <!-- <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div> -->
-   
+      <!-- main-section start -->
+    </div>
   </div>
 </body>
 
