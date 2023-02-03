@@ -5,14 +5,13 @@
 .image-size {
     height: 60%;
     overflow: hidden;
+    img {
+        width: 100%;
+        height: auto;
+    
+    }
+    
 }
-
-.image-size img {
-    width: 100%;
-    height: auto;
-
-}
-
 
 .content-section {
     height: 40%;
@@ -27,9 +26,6 @@
         font-weight: 800;
         font-size: 60px;
     }
-
-    // padding: 10px 0px;
-    /* text-align: center; */
 }
 
 .description-text {
@@ -39,7 +35,7 @@
     font-size: 20px;
     color: hsl(266deg 3% 42%);
     padding-top: 10px;
-    
+
     .btn-color {
         color: hsl(22deg 100% 96%);
         background-color: hsl(3deg 84% 64%);
@@ -53,6 +49,7 @@
     }
 
 }
+
 .aside-section {
     background-color: hsl(240, 100%, 5%);
     padding: 30px;
@@ -63,20 +60,26 @@
     color: hsl(35, 77%, 62%);
 }
 
+
 .feature {
     padding: 20px 0px;
     border-bottom: 2px solid hsl(238deg 23% 21%);
+    h3 {
+        color: hsl(260deg 10% 88%);
+        margin-bottom: 10px;
+    }
+    
+    .feature-subtext {
+        margin-bottom: 20px;
+        color: hsl(36, 100%, 99%);
+    }
 }
 
-h3 {
-    color: hsl(260deg 10% 88%);
-    margin-bottom: 10px;
+.feature-wrapper :nth-child(3) {
+    border-bottom: none;
 }
 
-.feature-subtext {
-    margin-bottom: 20px;
-    color: hsl(36, 100%, 99%);
-}
+
 
 .bottom-part {
     margin-top: 25px;
@@ -84,53 +87,50 @@ h3 {
 
 .bottom-section {
     display: flex;
+
     .bottom-image {
         height: 150px;
         width: 150px;
+
         img {
             width: auto;
             height: 100%;
             overflow: hidden;
         }
     }
+
     .bottom-text {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;  
+        // justify-content: space-between;  
         padding: 0 15px;
 
         .number {
             width: 100%;
-            text-align:start;
+            text-align: initial;
             font-size: 35px;
             font-weight: 700;
             color: hsl(260deg 6% 79%);
-        
+
         }
-        
+
         .bottom-subheading {
+            width: 100%;
+            text-align: initial;
             font-size: 20px;
             font-weight: 900;
             color: hsl(244deg 63% 5%);
         }
-        
+
         .bottom-description {
             color: hsl(260deg 6% 79%);
             line-height: 20px;
         }
     }
-    
-    
+
+
 
 }
-
-
-
-
-
-
-
-
 
 @media(max-width:425px) {
 
@@ -141,6 +141,7 @@ h3 {
     .bright-text {
         margin: 15px 0px;
         width: 100%;
+
         h1 {
             font-size: 40px;
         }
@@ -150,15 +151,14 @@ h3 {
         margin: 15px 0px;
     }
 
-    .aside-section{
+    .aside-section {
         margin: 15px 0px;
     }
 
     .bottom-section {
         margin: 15px 0px;
         padding: 0px 10px;
-       
-   
+
         .bottom-text {
             width: 100%;
             display: flex;
@@ -169,6 +169,18 @@ h3 {
         }
     }
 
+}
 
+@media(max-width:320px) {
+    .bottom-section {
+        .bottom-text {
+            .number {
+                font-size: 25px;
+            }
 
+            .bottom-subheading {
+                font-size: 16px;
+            }
+        }
+    }
 }

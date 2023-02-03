@@ -5912,7 +5912,7 @@ progress {
   --bs-nav-link-padding-x: 1rem;
   --bs-nav-link-padding-y: 0.5rem;
   --bs-nav-link-font-weight: ;
-  --bs-nav-link-color: #98969a;
+  --bs-nav-link-color: #656368;
   --bs-nav-link-hover-color: hsl(240deg, 100%, 5%);
   --bs-nav-link-disabled-color: #6c757d;
   display: flex;
@@ -6040,7 +6040,8 @@ progress {
 }
 
 .nav-item {
-  padding: 0px 25px;
+  padding-left: 25px;
+  font-weight: 400;
 }
 
 #toggle-bar {
@@ -6094,7 +6095,6 @@ progress {
   height: 60%;
   overflow: hidden;
 }
-
 .image-size img {
   width: 100%;
   height: auto;
@@ -6106,7 +6106,6 @@ progress {
 
 .bright-text {
   width: 50%;
-  /* text-align: center; */
 }
 .bright-text h1, .bright-text .h1 {
   color: black;
@@ -6148,15 +6147,17 @@ progress {
   padding: 20px 0px;
   border-bottom: 2px solid hsl(238deg, 23%, 21%);
 }
-
-h3, .h3 {
+.feature h3, .feature .h3 {
   color: hsl(260deg, 10%, 88%);
   margin-bottom: 10px;
 }
-
-.feature-subtext {
+.feature .feature-subtext {
   margin-bottom: 20px;
   color: hsl(36deg, 100%, 99%);
+}
+
+.feature-wrapper :nth-child(3) {
+  border-bottom: none;
 }
 
 .bottom-part {
@@ -6178,17 +6179,18 @@ h3, .h3 {
 .bottom-section .bottom-text {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   padding: 0 15px;
 }
 .bottom-section .bottom-text .number {
   width: 100%;
-  text-align: start;
+  text-align: initial;
   font-size: 35px;
   font-weight: 700;
   color: hsl(260deg, 6%, 79%);
 }
 .bottom-section .bottom-text .bottom-subheading {
+  width: 100%;
+  text-align: initial;
   font-size: 20px;
   font-weight: 900;
   color: hsl(244deg, 63%, 5%);
@@ -6226,6 +6228,14 @@ h3, .h3 {
     justify-content: center;
     align-items: center;
     padding: 0 20px;
+  }
+}
+@media (max-width: 320px) {
+  .bottom-section .bottom-text .number {
+    font-size: 25px;
+  }
+  .bottom-section .bottom-text .bottom-subheading {
+    font-size: 16px;
   }
 }
 
